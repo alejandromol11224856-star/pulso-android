@@ -1,0 +1,23 @@
+{
+  "name": "pulso-movil",
+  "version": "1.0.0",
+  "private": true,
+  "description": "App Android de Pulso (Capacitor). La web vive en OneDrive/Sesion local/pulso y se copia a www/.",
+  "type": "module",
+  "scripts": {
+    "web": "node scripts/copiar-web.mjs",
+    "sync": "npm run web && npx cap sync android",
+    "apk": "npm run sync && cd android && gradlew.bat assembleDebug",
+    "abrir": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.6.2",
+    "@capacitor/app": "8.1.2",
+    "@capacitor/core": "8.6.2",
+    "@capacitor/local-notifications": "8.3.1",
+    "@capacitor/status-bar": "8.0.4"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.6.2"
+  }
+}

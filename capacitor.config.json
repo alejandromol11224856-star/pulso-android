@@ -1,0 +1,15 @@
+{
+  "appId": "ar.pulso.finanzas",
+  "appName": "Pulso",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#0d0d0d"
+  },
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_pulso",
+      "iconColor": "#2a78d6"
+    }
+  }
+}
