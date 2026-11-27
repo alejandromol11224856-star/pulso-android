@@ -54,3 +54,7 @@ Para que el aviso llegue a la banda: Mi Fitness → tu banda → **Notificacione
 | 3b | App **Pulso en la banda** (Vela JS quick app) con la interfaz de la simulación | después de 3a |
 | 3c | Puente banda ↔ celular (Xiaomi Interconnect) para guardar el gasto en Pulso | después de 3b |
 | 4 | APK firmada de producción (y opcional Play Store) | al final |
+
+## Licencia
+
+© 2026 Alejandro Molina. **Todos los derechos reservados.** Código publicado solo para verlo como portfolio. Ver [LICENSE](LICENSE).
