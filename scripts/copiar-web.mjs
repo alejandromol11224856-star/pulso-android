@@ -6,7 +6,7 @@ import { homedir } from 'node:os';
 
 const ORIGEN = process.env.PULSO_WEB || join(homedir(), 'OneDrive', 'Datos adjuntos', 'Sesion local', 'pulso');
 const DESTINO = new URL('../www/', import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1');
-const FUERA = new Set(['api', 'node_modules', '.vercel', '.vercelignore', '.gitignore', 'package.json', 'package-lock.json', 'README.md', 'sw.js', 'Pulso.apk']);
+const FUERA = new Set(['api', 'node_modules', '.vercel', '.vercelignore', '.gitignore', 'package.json', 'package-lock.json', 'README.md', 'sw.js', 'Pulso.apk', 'docs', 'LICENSE', '.git']);
 
 if (!existsSync(ORIGEN)) { console.error('No encuentro la web en', ORIGEN); process.exit(1); }
 rmSync(DESTINO, { recursive: true, force: true });
